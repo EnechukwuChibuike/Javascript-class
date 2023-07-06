@@ -1,6 +1,8 @@
 body {
-  height: 200vh;
+  height: 100vh;
   background-color: grey;
+  padding: 0px;
+  margin: 0px;
   /* overflow: hidden; */
 }
 
@@ -87,7 +89,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 90vh;
+  height: 80vh;
 }
 
 #events {
@@ -136,4 +138,87 @@ body {
 
 #todo h1 {
   margin-left: 5px;
+}
+
+#danger {
+  background-color: rgba(5, 5, 5, 0.306);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  border: none;
+  transition: 1s;
+}
+
+#danger:hover {
+  background-color: rgba(5, 5, 5, 0.583);
+}
+
+.delete {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.dropdown {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: whitesmoke;
+  height: 30px;
+  width: 120px;
+  margin-right: 10px;
+  color: red;
+  cursor: pointer;
+}
+
+.del:hover .dropdown {
+  display: flex;
+}
+
+.del {
+  display: flex;
+}
+
+.modal {
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.639);
+  display: none;
+}
+
+.delModal {
+  width: 30%;
+  height: 30vh;
+  background-color: gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.optionDiv {
+  height: 18vh;
+  display: flex;
+  width: 30vw;
+  align-items: end;
+  justify-content: space-around;
+  border-top: 1px solid black;
+}
+
+.option {
+  height: 40px;
+  width: 100px;
+  margin-bottom: 10px;
+  background-color: black;
+  color: white;
+  border: none;
+  transition: 0.5s;
+}
+
+.option:hover {
+  opacity: 0.8;
 }
